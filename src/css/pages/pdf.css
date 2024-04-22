@@ -1,0 +1,96 @@
+.pdf {
+    padding: 60px 0;
+}
+
+.pdf-blog {
+    position: relative;
+    margin: 0 auto;
+    margin: 36px auto;
+}
+
+.pdf-img-div {
+    width: 255px;
+    height: 416px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(180, 180, 180, 1);
+}
+
+.pdf-page-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pdf-links {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    transform: translate(-30%, -10%);
+    width: 100px;
+    height: 30px;
+    z-index: 4;
+    opacity: 0;
+    color: var(--navbarBg);
+    font-size: 40px;
+    font-family: var(--fontFamilyMon);
+    transition: all .3s ease-in-out;
+
+
+}
+
+.pdf-links:hover {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.pdf-gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .7s ease-in-out;
+
+}
+
+.pdf-img-div:hover .pdf-links {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    transform: scale(1.02);
+    transform-origin: left center;
+}
+
+.pdf-gradient:hover {
+    background: linear-gradient(180deg, rgba(142, 142, 142, 0) -26.64%, rgba(25, 106, 180, 0.88) 129.81%);
+}
+
+.pdf-gradient:hover .pdf-links {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.pdf-date {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--calColor);
+    margin-top: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) and (min-width: 320px) {
+
+    .pdf {
+        padding: 20px 0;
+    }
+
+    .pdf-blog {
+        margin: 15px auto;
+    }
+
+    .pdf-date {
+        font-size: 15px;
+    }
+}
